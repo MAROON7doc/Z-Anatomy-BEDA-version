@@ -39,9 +39,13 @@ if ($LASTEXITCODE -ne 0) {
     exit $LASTEXITCODE
 }
 
-$apkPath = Join-Path $scriptDir "Z-Anatomy\Build\Android\ZAnatomy.apk"
-if (-not (Test-Path $apkPath)) {
-    Write-Host "APK not found at $apkPath" -ForegroundColor Red
+$candidates = @(
+    (Join-Path $scriptDir "Build\Android\ZAnatomy.apk"),
+    (Join-Path $scriptDir "Z-Anatomy\Build\Android\ZAnatomy.apk")
+)
+$apkPath = $candidates | Where-Object { Test-Path $_ } | Select-Object -First 1
+if (-not $apkPath) {
+    Write-Host "APK not found at Build\Android\ZAnatomy.apk" -ForegroundColor Red
     exit 1
 }
 
