@@ -25,7 +25,15 @@ Or view the [v1.0.0-android Release Page](https://github.com/MAROON7doc/Z-Anatom
   * Implemented mobile touch navigation (1-finger orbit, 2-finger pan, and pinch zoom).
   * Fixed startup camera auto-centering, scaling, and initial model visibility.
   * Created one-click automated build and ADB install toolchains (`build_android.ps1`, `install_to_device.ps1`).
-* **Original Z-Anatomy Project**: Created by [Lluis Vinent (LluisV)](https://github.com/LluisV/Z-Anatomy) and contributors (original desktop version).
+* **Original Z-Anatomy Project**: Created by [Lluis Vinent (LluisV)](https://github.com/LluisV/Z-Anatomy) and [Z-Anatomy](https://github.com/Z-Anatomy) contributors (original desktop version).
+
+---
+
+## 🔗 Upstream Contribution
+
+This work has been submitted as an official contribution back to the upstream project:
+* **Pull Request**: [**PR #44: Comprehensive Android Port**](https://github.com/LluisV/Z-Anatomy/pull/44) on [LluisV/Z-Anatomy](https://github.com/LluisV/Z-Anatomy)
+* **Target Branch**: `Mobile-Version`
 
 ---
 
